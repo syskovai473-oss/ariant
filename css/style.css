@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1em;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: rgb(220, 245, 244);
+}
+
+header {
+    background-color: rgb(204, 153, 13);
+    text-align: center;
+    padding: 20px 40px;
+}
+
+blockquote {
+    font-size: 1.5em;
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 5em;
+}
+
+footer {
+    background-color: rgb(219, 173, 47);
+    color:white;
+    padding: 20px 40px;
+}
+
+#about {
+    background-color: burlywood;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#articles {
+    padding: 20px 40px;
+}
+
+#article {
+    padding: 20px 40px;
+    text-align: left;
+}
+
+ul2 {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+ul3 {
+    text-align: left;
+    padding: 30px 40px;
+    font-size: 1.5em;
+}
+
+dl {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+#content {
+    padding: 20px 40px;
+    text-align: center;
+}
+p{
+    font-family: "PT Serif", serif;
+    /* text-align: justify;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem; */
+}
+ h1, h2
+{
+    font-family: "PT Serif", serif;
+}
