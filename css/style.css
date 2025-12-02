@@ -38,38 +38,23 @@ footer {
     text-align: center;
 }
 
-#articles {
-    padding: 20px 40px;
-}
 
 #article {
     padding: 20px 40px;
     text-align: left;
 }
 
-ul2 {
-    text-align: left;
-    padding: 20px 40px;
-}
 
-ul3 {
-    text-align: left;
-    padding: 30px 40px;
-    font-size: 1.5em;
-}
 
 dl {
     text-align: left;
 }
 
-h2 {
+h1, h2, h3 {
     text-align: center;
     font-size: 2rem;
 }
-h3 {
-    text-align: center;
-    font-size: 2rem;
-}
+
 
 p {
     text-align: justify;
@@ -87,14 +72,193 @@ nav ul {
     padding: 20px 40px;
     text-align: center;
 }
-p{
-    font-family: "PT Serif", serif;
-    /* text-align: justify;
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    line-height: 1.4rem; */
+
+/* body {
+    border: 10px solid red;
+    font-style:italic;
+} */
+
+a:link {
+    color:brown;
 }
- h1, h2
-{
+
+a:visited {
+    color:rgb(68, 31, 230);
+}
+a:active {
+    color: olivedrab;
+}
+a:hover {
+    color: orange;
+}
+a:focus {
+    color: red;
+}
+ol li:nth-child(odd) {
+    background-color: rgb(112, 145, 236);
+}
+.termin::after {
+    content: "Важно!";
+    font-size: 12px;
+    color: red;
+    margin-left: 10px;
+    background-color: white;
+    
+}
+
+ol li:nth-child(odd) {
+    background-color: rgb(145, 211, 143);
+    margin-left: 17px;
+    margin-right: 1600px;
+    border-radius: 5px;
+}
+
+.links li {
+    background-color: rgb(89, 179, 104);
+    margin-left: 17px;
+    margin-right: 1600px;
+    border-radius: 5px;
+}
+ 
+
+.brd {
+    border: 4px double black; 
+    background: #fc3; 
+    padding: 10px; 
+}
+
+
+p:first-line{
+    letter-spacing: 2px;
+}
+p:lang(en){
+    text-decoration: underline 1px;
+}
+#content p{
+    color: rgb(82, 80, 80);
+}
+
+footer img{
+    border: 4px double black; 
+    background: rgb(41, 177, 240); 
+    padding: 10px; 
+}
+img+p{
+    margin-top: 30px;
+}
+p {
     font-family: "PT Serif", serif;
+}
+h1, h2, h3{
+    font-family: "PT Serif", serif;
+}
+h1 {
+    font-style: italic;
+    font-weight: 1000;
+}
+h2 {
+    font-style: italic;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-style: italic;
+    font-weight: 1000;
+}
+
+table {      
+    border-collapse: collapse;
+    border: 5px solid gray;
+    box-align: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 1000px;
+    margin-top: 50px;
+}
+  
+td, th {
+    border: 2px solid black;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(77, 211, 144);
+}
+tbody tr:nth-child(2n),
+thead tr:nth-child(odd){
+    background-color: rgb(226, 199, 119);
+}
+td:nth-child(1),
+thead tr:first-child{
+    background-color: rgb(61, 187, 44);
+}
+#contact-form input[type="text"],
+#contact-form input[type="tel"],
+#contact-form input[type="date"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: rgb(94, 202, 103);
+    background-color: rgb(94, 202, 103);
+}
+#contact-form input[type="submit"]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border:rgb(47, 138, 74);
+    background-color:rgb(47, 138, 74);
+}
+#contact-form input[type="submit"]:hover{
+    padding: 5px;
+    margin-bottom: 10px;
+    border:rgb(158, 229, 160);
+    background-color:rgb(158, 229, 160);
+}
+#contact-form textarea[id="textarea"]{
+    height: 100px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(94, 202, 103);
+}
+#contact-form select[id="topic"]{
+    height: 30px;
+    width: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(94, 202, 103);
+}
+#contact-form input[type="email"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color:rgb(94, 202, 103);
+}
+#contact-form input[type="reset"]{
+    height: 25px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border:rgb(158, 229, 160);
+    background-color: rgb(158, 229, 160);
+}
+#contact-form input[type="reset"]:hover{
+    height: 25px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: rgb(47, 138, 74);
+    background-color: rgb(47, 138, 74);
+}
+form{
+    background-color: rgb(63, 150, 74);
+    border-radius: 30px;
+    height: 550px;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
 }

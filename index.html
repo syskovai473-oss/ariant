@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Грейс Хоппер</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Story+Script&display=swap" rel="stylesheet1">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kite+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Story+Script&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Story+Script&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Грейс Хоппер</h1>
-        <img src="img/pc-display-horizontal.svg" alt="логотип" width="50px">
+        <img src="img/pc-display-horizontal.svg" alt="логотип" width="50px" class="brd">
         <nav>
             <ul>
                 <li><a href="#about">Введение</a></li>
                 <li><a href="#articles">Информация</a></li>
+                <li><a href="#menu">Меню</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about">
-            <h2>Введение</h2>
+            <h2 >Введение</h2>
                 <img src="img/6xcmbcn28jqo85sy_nggqnawxyq.jpeg" alt="фото" width="300px">
             <p>  Грейс Хоппер (англ. Grace Hopper, урождённая Grace Brewster Murray — Грейс Брюстер Мюррей; 9 декабря 1906 — 1 января 1992) — американская учёная и коммодор (контр-адмирал младшего ранга) флота США, разработчица исторически первого компилятора. </p>
             <p>Была одной из первых, кто писал программы для гарвардского компьютера Марк I; развила концепцию машинно-независимых языков программирования, что привело к созданию Кобола — одного из первых высокоуровневых языков программирования. Ей приписывается популяризация понятия об отладке программ. Благодаря множеству достижений и высокому чину во флоте её иногда называют «Удивительная Грейс», «Amazing Grace» (возможно, аллюзия на гимн Amazing Grace). В её честь назван эсминец ВМФ США USS Hopper (DDG-70), суперкомпьютер Cray XE6 «Hopper» Исследовательского вычислительного центра министерства энергетики (NERSC), трансатлантический подводный кабель связи.</p>
         </section>
         <section id="articles">
             <h2>Информация</h2>
-            <ol>
+            <ol class="links">
                 <li><a href="article1.html">Биография</a></li>
                 <li><a href="article2.html">Достижения</a></li>
                 <li><a href="article3.html">Интересные факты</a></li>
-                <li><a href="article4.html">Термины</a></li>
+                <li><a href="article4.html" class="termin">Термины и даты</a></li>
             </ol>
         </section>
     </main>
+    <feedback id="menu">
+        <h2>Обратная связь</h2>
+        <form action="обработчик" id="contact-form">
+            <div class="form__item">
+                <label for="topic" >Тема:</label><br>
+                <select name="topic" id="topic" required>
+                    <option value="1">Заказать услугу</option>
+                    <option value="2">Оставить отзыв / замечание</option>
+                    <option value="3">Предложить сотрудничество</option>
+                    <option value="4">Другое</option>
+                </select>
+            </div>
+            <div class="form__item">
+                <label for="name">ФИО:</label><br>
+                <input type="text" name="name" id="name" placeholder="Иванов Иван Иванович" required>
+            </div>
+            <div class="form__item">
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="IvanovIvan@mail.ru" required> 
+            </div>
+            <div class="form__item">
+                <label for="tel">Телефон:</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="+7" required>
+            </div>
+            <div class="form__item">
+                <label for="date">Дата</label><br>
+                <input type="date" name="date" id="date" placeholder="дд.мм.гггг." required>
+            </div>
+            <div class="form__item">
+                <label for="textarea">Сообщение:</label><br>
+                <textarea id="textarea" rows="5" placeholder="Печатать..." required></textarea>
+            </div>
+            <div class="form__item">
+                <label for="checkbox">Согласие на обработку</label>
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+            </div>
+            <div class="form__item">
+                <input type="submit" value="ОТПРАВИТЬ">
+            </div>
+            <div class="form__item">
+                <label for="reset"></label>
+                <input type="reset" name="reset" id="reset" required>
+            </div>
+                
+
+        </form>
+    </feedback>
     <time datetime="2025-10-14T10:00">
         10:00 14.10.2025
         </time>
@@ -53,6 +98,18 @@
         <p>&copy; <a href="https://portal.midis.info/company/personal/user/21461/">Сыскова Ирина</a>, 2025 г.</p>
         <p>Телефон <a href="tel:+79089384707">+79089384707</a></p>
         <p>Эл.почта <a href="mailto:mail@mail.com">ymniahki23@gmail.ru</a></p>
+        <a href=»https://www.google.com/»><img src="img/google.svg" aria="гугл" width="50px" class="bord"></a><a href=»https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0»><img src="img/wikipedia.svg" aria="википедия" width="50px" class="bord"></a><a href="https://www.android.com/intl/ru_ru/"><img src="img/android.svg" aria="андроид" width="50px" class="bord"></a>
     </footer>    
 </body>
 </html>
+
+
+<!-- 
+body = 1
+.pink = 100
+#logo= 10000
+#mainnav ul = 10001
+#mainnav .active = 10100
+#mainnav a:hover = 10101
+#mainnav ul li.active = 10102
+-->
